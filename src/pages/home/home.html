@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <ion-input [(ngModel)]="user.username" placeholder="Username"></ion-input>
+  <ion-input [(ngModel)]="user.password" placeholder="Password" type="password"></ion-input>
+  <button ion-button="" (click)="login()">Login</button>
+  <label *ngIf="goodbyeMsg && !user.username">{{goodbyeMsg}}</label>
+</ion-content>
